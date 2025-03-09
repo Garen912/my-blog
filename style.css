@@ -91,6 +91,7 @@ main {
   align-items: center;
   padding: 20px;
   padding-top: 69px;
+  padding-bottom: 70px;
 }
 
 main .card {
@@ -190,22 +191,23 @@ footer .container p {
 
 @media (max-width: 768px) {
   html {
-    scroll-padding-top: 600px; /* 视口顶部预留90px空间 */
+    scroll-padding-top: 112px; /* 视口顶部预留112px空间 */
   }
 
   header {
-    height: auto;
     padding: 20px;
   }
 
+  .nav-left {
+    display: block;
+  }
+
   .nav-left .logo {
-    line-height: 115px;
   }
 
   .nav-left ul {
     display: flex;
-    flex-direction: column;
-    margin-top: 18px;
+    margin-top: 8px;
   }
 
   .nav-left ul li {
@@ -220,11 +222,12 @@ footer .container p {
   }
 
   .nav-right {
-    line-height: 115px;
+    padding: 0;
   }
 
   main {
-    height: calc(100vh - 219px);
+    padding-top: 92px;
+    padding-bottom: 60px;
   }
 
   footer {
